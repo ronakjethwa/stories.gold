@@ -8,7 +8,10 @@ A website that automatically generates and displays compelling human achievement
 ### Free Tier Services
 - **Hosting:** Netlify (Free tier)
 - **Database:** MongoDB Atlas (Free tier - 512MB)
-- **Content Generation:** OpenAI API (Pay as you go - minimal usage)
+- **Content Generation:** 
+  - Local LLaMA2 (Open source)
+  - GPT4All (Open source)
+  - Hugging Face Models (Free tier)
 - **Image Storage:** Cloudinary (Free tier - 25 credits/month)
 - **Analytics:** Netlify Analytics (Free tier)
 - **Domain:** GoDaddy (Already owned - stories.gold)
@@ -19,11 +22,19 @@ A website that automatically generates and displays compelling human achievement
 ## Core Features
 
 ### 1. Story Generation System
-- **AI-Powered Story Generation**
-  - Integration with GPT-4 or similar LLM for story generation
-  - Custom prompt engineering to ensure compelling narratives
-  - Fact validation system to maintain authenticity
-  - Historical event database integration for real stories
+- **Open Source AI Generation**
+  - Primary: Self-hosted LLaMA2 for story generation
+  - Backup: GPT4All local model
+  - Fallback: Hugging Face free-tier models
+  - Wikipedia API integration for fact validation
+  - Historical events from public domain sources
+  - Pre-generated story pool as backup
+- **Content Sources**
+  - Public domain biographies
+  - Creative Commons stories
+  - Historical archives (Library of Congress)
+  - Open data initiatives
+  - Community submissions (future feature)
 
 ### 2. Image Generation/Selection
 - **Options:**
