@@ -3,6 +3,19 @@
 ## Project Overview
 A website that automatically generates and displays compelling human achievement stories every 24 hours. Each story includes a person's photo and their greatest achievement, creating an inspiring and engaging user experience.
 
+## Cost-Effective Architecture
+
+### Free Tier Services
+- **Hosting:** Netlify (Free tier)
+- **Database:** MongoDB Atlas (Free tier - 512MB)
+- **Content Generation:** OpenAI API (Pay as you go - minimal usage)
+- **Image Storage:** Cloudinary (Free tier - 25 credits/month)
+- **Analytics:** Netlify Analytics (Free tier)
+- **Domain:** GoDaddy (Already owned - stories.gold)
+- **SSL:** Netlify (Free automatic SSL)
+- **Version Control:** GitHub (Free tier)
+- **CI/CD:** GitHub Actions (Free tier - 2000 minutes/month)
+
 ## Core Features
 
 ### 1. Story Generation System
@@ -49,16 +62,17 @@ A website that automatically generates and displays compelling human achievement
 - TypeScript for type safety
 
 ### Backend Stack
-- Node.js with Express
-- MongoDB for story storage
-- Redis for caching
-- AWS S3 for image storage
+- Netlify Functions (Free tier - 125K requests/month)
+- MongoDB Atlas (Free tier)
+- Netlify Edge Cache
+- Cloudinary for images
 
 ### Infrastructure
-- **Hosting:** Vercel (Frontend) + AWS (Backend)
-- **CI/CD:** GitHub Actions
-- **Monitoring:** DataDog or New Relic
-- **Domain & SSL:** Cloudflare
+- **Hosting:** Netlify (Free tier)
+- **CI/CD:** Netlify CI/CD (Included in free tier)
+- **Monitoring:** Netlify Analytics
+- **Domain:** GoDaddy (stories.gold)
+- **SSL:** Netlify Managed SSL
 
 ### APIs and Services
 1. **Story Generation API**
