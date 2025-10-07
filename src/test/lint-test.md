@@ -1,24 +1,40 @@
-# Test Markdown
+# Example Documentation
 
-This line is too long and should be wrapped because it exceeds our configured
-limit of 80 characters in markdown files according to our settings.
+This is an example of a properly formatted markdown file that follows our style guide and
+linting rules.
 
-## Missing space after heading
+## Component Usage
 
-- Incorrect indentation
+- Install the required dependencies
+- Import the component
+- Use it in your React application
 
-* Mixed list markers
-
-- Should use consistent markers
-  - Over-indented list item
+### Code Example
 
 ```typescript
-// Code block with issues
-var x = 'should use const';
-function noReturn(param: any) {
-  console.log('test');
-}
+import { Component } from './Component';
+
+const MyPage = (): JSX.Element => {
+  return (
+    <div>
+      <Component title="Hello, World!" />
+    </div>
+  );
+};
+
+export default MyPage;
 ```
 
-- Trailing space follows
-  - Inconsistent indentation Missing new line at end of file
+### Features
+
+- Type-safe props
+- Responsive design
+- Customizable styling
+
+## Development
+
+1. Clone the repository
+2. Install dependencies
+3. Start the development server
+
+For more information, see the [architecture document](../docs/architecture.md).

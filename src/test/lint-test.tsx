@@ -1,19 +1,16 @@
-// Test file with intentional issues
-var incorrectVar = 'using var instead of const';
-function missingReturnType(param: any) {
-  console.log('debugging');
-  return param;
+// Example of a properly formatted and lint-compliant component
+import { FC } from 'react';
+
+interface ComponentProps {
+  title: string;
 }
 
-interface EmptyInterface {}
-
-const unusedVariable = 'this is not used';
-
-export const Component = () => {
-  alert('using alert');
+export const Component: FC<ComponentProps> = ({ title }): JSX.Element => {
   return (
-    <div>
-      <h1>Test Component</h1>
+    <div className="test-component">
+      <h1>{title}</h1>
     </div>
   );
 };
+
+export default Component;
