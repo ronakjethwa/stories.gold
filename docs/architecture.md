@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-A website that automatically generates and displays compelling human achievement stories every 24 hours. Each story includes a person's photo and their greatest achievement, creating an inspiring and engaging user experience.
+A website that automatically generates and displays compelling human achievement
+stories every 24 hours. Each story includes a person's photo and their greatest
+achievement, creating an inspiring and engaging user experience.
 
 ## Cost-Effective Architecture
 
